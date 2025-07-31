@@ -1,0 +1,117 @@
+/* App.css */
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left form panel */
+section:first-of-type {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #1a252f;
+}
+
+/* === Right display panel (CV Preview) === */
+section:last-of-type {
+  flex: 2;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Each resume section block */
+section:last-of-type > div {
+  border-left: 4px solid #2c3e50;
+  padding-left: 1.25rem;
+}
+
+/* Section titles like "Education", "Work Experience" */
+section:last-of-type > div > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Resume entry block */
+section:last-of-type p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/* Optional bullet icon */
+section:last-of-type p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+/* Bold titles: name, school, company */
+section:last-of-type p strong {
+  display: block;
+  font-size: 1.15rem;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+/* Light subtitles/dates */
+section:last-of-type p span {
+  display: block;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+textarea {
+  resize: none;
+}
